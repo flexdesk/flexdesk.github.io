@@ -1,6 +1,6 @@
 'use strict';
 
-fleskDeskApp.controller=('floorController', function($scope){
+flexDeskApp.controller('floorController', function($scope){
 
 
 });

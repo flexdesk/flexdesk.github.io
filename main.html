@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="flexDeskApp">
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -13,8 +13,10 @@
   <link href="http://www.att.com/styles/att/assets3.2.0/css/sandbox-styles.min.css" rel="stylesheet">
   <link href="assets/css/bootstrap.css" rel="stylesheet">
   <link href="assets/css/main.css" rel="stylesheet">
-
+  
   <!-- JS -->
+  <script src="assets/js/angular.js"></script>
+  <script src="assets/js/angular-route.js"></script>
 </head>
 <body ng-controller="buildingController">
 
@@ -26,7 +28,7 @@
     <ul>
       <li><a href="#">Logout</a></li>
       <li><a href="#">Locate Cube</a></li>
-      <li><a href="#">Select Building</a></li>
+      <li><a href="#/">Select Building</a></li>
       <li><a href="#">Favorites</a></li>
       <li><a href="#">Help</a></li>
     </ul>
@@ -56,6 +58,7 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
   <script src="assets/js/scotchPanels.js"></script>
   <script src="assets/js/main.js"></script>
+  
   <script src="app/components/flexDeskApp.js"></script>
   <script src="app/components/building/controller.js"></script>
   <script src="app/components/floor/controller.js"></script>
