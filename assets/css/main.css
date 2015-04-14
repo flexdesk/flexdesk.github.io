@@ -9,6 +9,15 @@
   width: 80%;
 }
 
+#search-icon {
+  background-color: #0574ac;
+  border: 1px solid #0574ac
+}
+
+#search-icon span {
+  color: #fff;
+}
+
 /****************************
 SIDEBAR
 ****************************/

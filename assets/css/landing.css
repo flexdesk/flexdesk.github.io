@@ -35,13 +35,26 @@ h1 {
   width: 100%;
 }
 
+#password {
+  clear: right;
+  margin-right: 0;
+}
+
 @media (orientation: landscape) {
   h1 {
     margin: 10px 0 25px;
   }
 
   .login-input {
-    display: inline-block;
+    display: inline;
     width: 48.25%;
+  }
+
+  #password {
+    margin-right: 0;
+  }
+
+  .form-row {
+    clear: both;
   }
 }
