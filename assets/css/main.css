@@ -1,0 +1,72 @@
+.toggle-panel {
+  display: inline-block;
+  font-size: 25px;
+  margin: 12px 10px 0;
+}
+
+#search-form {
+  margin: 7px 10px 0 0;
+  width: 80%;
+}
+
+/****************************
+SIDEBAR
+****************************/
+#sidebar {
+  background: #333;
+  bottom: 0;
+  color: #fff;
+  left: 0;
+  list-style: none;
+  position: fixed;
+  right: 0;
+  top: 0;
+}
+
+#side-head {
+  display: block;
+  height: 50px;
+  padding-left: 20px;
+}
+
+#side-globe {
+  display: inline-block;
+  margin-right: 40px;
+}
+
+#side-attuid {
+  display: inline-block;
+  line-height: 50px;
+}
+
+#sidebar ul {
+  margin: 0;
+}
+
+#sidebar li {
+  display: block;
+  border-top: 1px solid rgba(102,102,102, .5);
+  padding: 10px 20px;
+  position: relative;
+  text-align: left;
+  width: 100%;
+}
+
+#sidebar li a {
+  display: block;
+  color: #ccc;
+  text-decoration: none;
+}
+
+#sidebar li:focus,
+#sidebar li:hover {
+  background-color: #666666;
+  text-decoration: none;
+}
+
+/****************************
+MAIN CONTENT
+****************************/
+#main {
+  /*height: 600px;*/
+}

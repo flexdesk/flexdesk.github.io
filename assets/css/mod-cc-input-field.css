@@ -1,0 +1,66 @@
+.ccs-sprite {
+  height: 24px;
+  width: auto;
+  padding: 0;
+  margin: 0;
+}
+.css-sprite ul {
+  height: 24px;
+  width: auto;
+  margin: -5px 0 0;
+}
+.css-sprite-amex,
+.css-sprite-discover,
+.css-sprite-mc,
+.css-sprite-visa,
+.css-sprite-visa-gift-card {
+  background-image: url(//0.ecom.attccc.com/styles/att/assets3.2.0/images/cc-images-sprite.png);
+  background-repeat: no-repeat;
+  background-size: 164px 48px;
+  width: 38px;
+  height: 24px;
+  display: inline-block;
+}
+@media \0screen\,screen\8 {
+  .css-sprite-amex,
+  .css-sprite-discover,
+  .css-sprite-mc,
+  .css-sprite-visa,
+  .css-sprite-visa-gift-card {
+    background-image: url(//0.ecom.attccc.com/styles/att/assets3.2.0/images/cc-images-sprite-ie8.png);
+  }
+}
+.css-sprite-mc {
+  background-position: 0 -24px;
+}
+.css-sprite-visa {
+  background-position: -42px -24px;
+}
+.css-sprite-amex {
+  background-position: -84px -24px;
+}
+.css-sprite-discover {
+  background-position: -126px -24px;
+}
+.css-sprite-visa-gift-card {
+  background-position: -168px -24px;
+}
+.show-mc .css-sprite-mc {
+  background-position: 0 0;
+}
+.show-visa .css-sprite-visa {
+  background-position: -42px 0;
+}
+.show-amex .css-sprite-amex {
+  background-position: -84px 0;
+}
+.show-discover .css-sprite-discover {
+  background-position: -126px 0;
+}
+.show-visa-gift-card .css-sprite-visa-gift-card {
+  background-position: -168px 0;
+}
+.cvc-cc img,
+.cvc-amex img {
+  margin: 10px -8px 0 0;
+}
