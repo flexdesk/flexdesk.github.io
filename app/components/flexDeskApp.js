@@ -6,8 +6,8 @@ flexDeskApp.config(function($routeProvider) {
 		$routeProvider
 
 			// route for the building page
-			.when('/building', {
-				templateUrl : 'building/building.html',
+			.when('/', {
+				templateUrl : 'app/components/building/building.html',
 				controller  : 'buildingController'
 			})
 

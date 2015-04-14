@@ -1,6 +1,6 @@
 'use strict';
 
-fleskDeskApp.controller=('layoutController', function($scope){
+flexDeskApp.controller('layoutController', function($scope){
 
 
 });
