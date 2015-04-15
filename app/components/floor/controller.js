@@ -1,16 +1,29 @@
 'use strict';
 
 flexDeskApp.controller('floorController', ['$scope', '$cookies', '$cookieStore', '$window','$location', function($scope, $cookies, $cookieStore, $window, $location){
-	$scope.building = $cookieStore.get('selectedBuildingName');
-	$scope.address = $cookieStore.get('selectedBuildingAddress');
-	if ($scope.building == 'Midtown I') {
-		$scope.floors = floorListATL || [];
+	$scope.floors = floorList;
+	$scope.building = $cookieStore.get('buildingSelected'); 
+	if($scope.building == 'Midtown I'){
+		$scope.floors = floorListATL;
 	}
+	
+	$scope.goSection = function(){
+		$cookieStore.put('floorSelected', this.floorSelect);
+		$location.url("section");
+	};
 }]);
-
+var floorList = {};
 var floorListATL = [
 	{
-		name: '10th Floor',
+		name:'8th Floor',
+		
+	},
+	{
+		name:'9th Floor',
+		
+	},
+	{
+		name:'10th Floor',
 	},
 	{
 		name: '11th Floor',
