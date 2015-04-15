@@ -35,25 +35,27 @@
     </ul>
   </div>
 
-  <header class="navbar globalNav">
-    <div class="row">
-      <div class="col-xs-2">
-        <span class="toggle-panel glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+  <div id="wrapper">
+    <header class="navbar globalNav">
+      <div class="row">
+        <div class="col-xs-2">
+          <span class="toggle-panel glyphicon glyphicon-menu-hamburger" aria-hidden="true"></span>
+        </div>
+        <div class="col-xs-10 text-right">
+          <form id="search-form">
+            <div class="input-group">
+              <input type="search" class="form-control" id="search" placeholder="Search">
+              <span id="search-icon" class="glyphicon glyphicon-search"></span>
+            </div>
+          </form>
+        </div>
       </div>
-      <div class="col-xs-10 text-right">
-        <form id="search-form">
-          <div class="input-group">
-            <input type="search" class="form-control" id="search" placeholder="Search">
-            <span id="search-icon" class="glyphicon glyphicon-search"></span>
-          </div>
-        </form>
-      </div>
+
+    </header>
+
+    <div id="main">
+      <div ng-view></div>
     </div>
-
-  </header>
-
-  <div id="main">
-    <div ng-view></div>
   </div>
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>

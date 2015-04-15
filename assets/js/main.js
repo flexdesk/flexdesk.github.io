@@ -1,4 +1,6 @@
-$('#main').css('height', window.innerHeight);
+var $main = $('#main');
+
+$main.css('height', window.innerHeight);
 
 // https://github.com/scotch-io/scotch-panels
 // $('#sidebar').scotchPanel({
@@ -21,10 +23,19 @@ var sidebar = $('#sidebar').scotchPanel({
   enableEscapeKey: true // Clicking Esc will close the panel
 });
 
-sidebar.toggle();
+// $('.toggle-panel').click(function() {
+//   $('#wrapper').toggleClass('overlay');
+// });
+
+$main.click(function() {
+  sidebar.close();
+});
+
+$('#sidebar li').click(function() {
+  sidebar.close();
+});
 
 
 $('#search-icon').click(function() {
-  $('#search')
-    .animate({width: 'toggle'}, 'fast');
+  $('#search').animate({width: 'toggle'}, 'fast');
 });

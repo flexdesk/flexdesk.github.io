@@ -109,6 +109,19 @@ MAIN CONTENT
 ****************************/
 #main {
   /*height: 600px;*/
+  /*z-index: -9999;*/
+}
+
+.ng-view {
+  /*z-index: -9999;*/
+}
+
+.overlay {
+  background: rgba(0,0,0,.6);
+  overflow: visible;
+  height: 100%;
+  width: 100%;
+  /*z-index: 9999;*/
 }
 
 .list-head {
@@ -146,9 +159,9 @@ BUILDINGS
 }
 
 /****************************
-BUILDINGS
+FLOOR, SECTION
 ****************************/
-.floor-name {
+.small-name {
   display: block;
   font-size: 20px;
 }

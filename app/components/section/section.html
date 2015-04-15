@@ -1,9 +1,13 @@
-<h1 class="sandbox-code-heading content-pad">Section of {{building}} : {{floor}}</h1>
+<div class="list-head sandbox-code-heading content-pad">
+	<h2>{{ building }}</h2>
+	<small>{{ floor }}</small>
+</div>
+
 <hr class="hr-small">
-<ul id="buildings" class="list">
-	<li ng-repeat="section in sections | orderBy:'name'"">
+<ul class="list">
+	<li ng-repeat="section in sections | orderBy:'name'">
 		<a ng-click="sectionSelect = section.name; goLayout()">
-			<span class="building-name">{{ section.name }}</span>
+			<span class="small-name">{{ section.name }}</span>
 		</a>
 	</li>
 </ul>
