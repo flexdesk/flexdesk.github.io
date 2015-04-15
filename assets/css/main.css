@@ -14,24 +14,39 @@ a:hover {
 /****************************
 HEADER BAR
 ****************************/
+header.globalNav {
+  background-color: #ef6f00;
+  background-image: none;
+  height: 50px;
+  border: 0;
+}
+
+
 .toggle-panel {
   display: inline-block;
   font-size: 25px;
-  margin: 12px 10px 0;
+  line-height: 50px;
+  margin: 0 10px 0;
 }
 
 #search-form {
-  margin: 7px 10px 0 0;
-  width: 80%;
+  display: inline-block;
 }
 
 #search-icon {
-  background-color: #0574ac;
-  border: 1px solid #0574ac
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  line-height: 50px;
+  margin: 0 10px 0 0;
 }
 
-#search-icon span {
-  color: #fff;
+#search {
+  border-radius: 5px;
+  margin: 0;
+  width: 200px;
+  display: none;
+  margin: 7px 10px 0 0;
 }
 
 /****************************
@@ -50,7 +65,7 @@ SIDEBAR
 
 #side-head {
   display: block;
-  height: 50px;
+  height: 49px;
   padding-left: 20px;
 }
 
