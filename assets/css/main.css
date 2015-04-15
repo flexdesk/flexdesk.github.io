@@ -19,8 +19,8 @@ header.globalNav {
   background-image: none;
   height: 50px;
   border: 0;
+  margin: 0;
 }
-
 
 .toggle-panel {
   display: inline-block;
@@ -111,22 +111,44 @@ MAIN CONTENT
   /*height: 600px;*/
 }
 
+.list-head {
+  margin: 0;
+  padding: 15px;
+}
+
+.list-head h2 {
+  margin: 0;
+}
+.list-head small {
+  color: #666;
+  font-size: 12px;
+}
+
+.list li:hover,
+.list li:focus {
+  cursor: pointer;
+  background-color: #f2f2f2;
+}
+
 /****************************
 BUILDINGS
 ****************************/
 .building-name {
   display: block;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 5px;
 }
 
 .building-address {
+  color: #666;
   display: block;
-  font-size: 14px;
-  color: #666666;
+  font-size: 12px;
 }
 
-#buildings li:hover,
-#buildings li:focus {
-  background-color: #f2f2f2;
+/****************************
+BUILDINGS
+****************************/
+.floor-name {
+  display: block;
+  font-size: 20px;
 }

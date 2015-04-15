@@ -2,13 +2,12 @@
 
 flexDeskApp.controller('buildingController', ['$scope', '$cookies', '$cookieStore', '$window','$location', function($scope, $cookies, $cookieStore, $window, $location){
 	$scope.buildings = buildingList;
-	
-	
-	$scope.goFloor = function(){
-		$cookieStore.put('buildingSelected', this.buildingSelect);
-		$location.url("floor");
-	};
 
+	$scope.goFloor = function(name, address) {
+		$cookieStore.put('selectedBuildingName', name);
+		$cookieStore.put('selectedBuildingAddress', address);
+		$location.url('floor');
+	};
 }]);
 
 
