@@ -2,7 +2,7 @@
 <hr class="hr-small">
 <ul id="buildings" class="list">
 	<li ng-repeat="building in buildings | orderBy:'name'">
-		<a href="#">
+		<a ng-click="buildingSelect = building.name ; goFloor()">
 			<span class="building-name">{{ building.name }}</span>
 			<span class="building-address">{{ building.address }}</span>
 		</a>

@@ -1,0 +1,9 @@
+<h1 class="sandbox-code-heading content-pad">Floors of {{building}}</h1>
+<hr class="hr-small">
+<ul id="buildings" class="list">
+	<li ng-repeat="floor in floors | orderBy:'name'">
+		<a href="#floor">
+			<span class="building-name">{{ floor.name }}</span>
+		</a>
+	</li>
+</ul>
