@@ -6,11 +6,20 @@ flexDeskApp.controller('floorController', ['$scope', '$cookies', '$cookieStore',
 	if($scope.building == 'Midtown I'){
 		$scope.floors = floorListATL;
 	}
+	
+	$scope.goSection = function(){
+		$cookieStore.put('floorSelected', this.floorSelect);
+		$location.url("section");
+	};
 }]);
 var floorList = {};
 var floorListATL = [
 	{
-		name:'',
+		name:'8th Floor',
+		
+	},
+	{
+		name:'9th Floor',
 		
 	},
 	{
