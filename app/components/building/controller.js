@@ -1,9 +1,15 @@
 'use strict';
 
-flexDeskApp.controller('buildingController', function($scope){
+flexDeskApp.controller('buildingController', ['$scope', '$cookies', '$cookieStore', '$window','$location', function($scope, $cookies, $cookieStore, $window, $location){
 	$scope.buildings = buildingList;
+	
+	
+	$scope.goFloor = function(){
+		$cookieStore.put('buildingSelected', this.buildingSelect);
+		$location.url("floor");
+	};
 
-});
+}]);
 
 
 var buildingList = [

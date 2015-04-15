@@ -1,5 +1,5 @@
 //create the module and name it flexDeskApp
-var flexDeskApp = angular.module('flexDeskApp', ['ngRoute']);
+var flexDeskApp = angular.module('flexDeskApp', ['ngRoute','ngCookies']);
 
 flexDeskApp.config(function($routeProvider) {
 		$routeProvider
@@ -12,18 +12,18 @@ flexDeskApp.config(function($routeProvider) {
 
 			// route for the floor page
 			.when('/floor', {
-				templateUrl : 'floor/floor.html',
+				templateUrl : 'app/components/floor/floor.html',
 				controller  : 'floorController'
 			})
 
 			// route for the section page
 			.when('/section', {
-				templateUrl : 'section/section.html',
+				templateUrl : 'app/components/section/section.html',
 				controller  : 'sectionController'
 			})
 			// route for the layout page
 			.when('/layout', {
-				templateUrl : 'layout/layout.html',
+				templateUrl : 'app/components/layout/layout.html',
 				controller  : 'layoutController'
 			});
 	});
