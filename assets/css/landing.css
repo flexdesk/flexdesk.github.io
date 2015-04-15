@@ -6,6 +6,16 @@ body {
   overflow: hidden;
 }
 
+a {
+  color: #0574ac;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #44c8f5;
+  text-decoration: none;
+}
+
 .wrapper {
   background-color: #f2f2f2;
   display: table;

@@ -1,4 +1,3 @@
-
 //create the module and name it flexDeskApp
 var flexDeskApp = angular.module('flexDeskApp', ['ngRoute']);
 

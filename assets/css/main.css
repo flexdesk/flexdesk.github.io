@@ -1,3 +1,19 @@
+/****************************
+GENERAL
+****************************/
+a {
+  color: #0574ac;
+  text-decoration: none;
+}
+
+a:hover {
+  /*color: #0c2577;*/
+  text-decoration: none;
+}
+
+/****************************
+HEADER BAR
+****************************/
 .toggle-panel {
   display: inline-block;
   font-size: 25px;
@@ -78,4 +94,24 @@ MAIN CONTENT
 ****************************/
 #main {
   /*height: 600px;*/
+}
+
+/****************************
+BUILDINGS
+****************************/
+.building-name {
+  display: block;
+  font-size: 24px;
+  margin-bottom: 5px;
+}
+
+.building-address {
+  display: block;
+  font-size: 14px;
+  color: #666666;
+}
+
+#buildings li:hover,
+#buildings li:focus {
+  background-color: #f2f2f2;
 }

@@ -1,3 +1,10 @@
-<div ng-repeat="building in buildings">
-	<h1> {{building.name}}
-</div>
+<h1 class="sandbox-code-heading content-pad">Buildings</h1>
+<hr class="hr-small">
+<ul id="buildings" class="list">
+	<li ng-repeat="building in buildings | orderBy:'name'">
+		<a href="#">
+			<span class="building-name">{{ building.name }}</span>
+			<span class="building-address">{{ building.address }}</span>
+		</a>
+	</li>
+</ul>
