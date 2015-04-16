@@ -109,6 +109,10 @@ SIDEBAR
   text-decoration: none;
 }
 
+#sidebar li a span {
+  margin-right: 10px;
+}
+
 #sidebar li:focus,
 #sidebar li:hover {
   background-color: #666666;
@@ -118,20 +122,6 @@ SIDEBAR
 /****************************
 MAIN CONTENT
 ****************************/
-#container {
-  /*height: 150%;*/
-  /*height: 150%;*/
-  /*overflow-y: auto;*/
-}
-
-.overlay {
-  background: rgba(0,0,0,.6);
-  overflow: visible;
-  /*height: 100%;*/
-  width: 100%;
-  /*z-index: 9999;*/
-}
-
 .list-head {
   margin: 0;
   padding: 15px;
@@ -204,6 +194,7 @@ FLOOR, SECTION
 #section-map img {
   display: block;
   margin: 0 auto;
+  width: 350px;
 }
 
 #section-map img:focus,
@@ -212,7 +203,7 @@ FLOOR, SECTION
 }
 
 #seat-options {
-  display: block;
+  display: none;
 }
 
 #seat-options a {
@@ -227,4 +218,112 @@ FLOOR, SECTION
 
 .favorited {
   color: #cf2a2a;
+}
+
+#map {
+  display: block;
+  width: 340px;
+  height: 355px;
+  position: relative;
+  background-image: url('/assets/img/section.png') ;
+  margin: 0 auto;
+}
+
+.seat {
+  background-color: rgba(81, 163, 81, .5);
+  border: 1px solid rgba(81, 163, 81, .5);
+  color: #333;
+  display: inline-block;
+  font-weight: bold;
+  height: 68px;
+  line-height: 68px;
+  position: absolute;
+  text-align: center;
+  text-shadow: 0 0 5px #fff;
+  width: 68px;
+  z-index: 5000;
+}
+
+.seat:hover {
+  cursor: pointer;
+}
+
+.selected {
+  background-color: rgba(252, 179, 20, .5);
+  border: 1px solid rgba(252, 179, 20, .5);
+}
+
+.unavailable {
+  background-color: rgba(217, 83, 79, .5);
+  border: 1px solid rgba(217, 83, 79, .5);
+}
+
+#s1 {
+  top: 7px;
+  left: 7px;
+}
+
+#s2 {
+  top: 7px;
+  left: 78px;
+}
+
+#s3 {
+  top: 76px;
+  left: 7px;
+}
+
+#s4 {
+  top: 146px;
+  left: 7px;
+}
+
+#s5 {
+  top: 216px;
+  left: 7px;
+}
+
+#s6 {
+  top: 283px;
+  left: 7px;
+}
+
+#s7 {
+  top: 283px;
+  left: 76px;
+}
+
+#s8 {
+  top: 7px;
+  left: 150px;
+}
+
+#s9 {
+  top: 283px;
+  left: 145px;
+}
+
+#s10 {
+  top: 8px;
+  left: 266px;
+}
+
+#s11 {
+  top: 78px;
+  left: 266px;
+}
+
+#s12 {
+  top: 148px;
+  left: 266px;
+}
+
+#s13 {
+  top: 217px;
+  left: 266px;
+}
+
+#s14 {
+  top: 285px;
+  left: 266px;
 }

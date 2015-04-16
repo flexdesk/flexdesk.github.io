@@ -4,6 +4,7 @@ flexDeskApp.controller('sectionController', ['$scope', '$cookies', '$cookieStore
 	$scope.sections = [];
 	$scope.floor = $cookieStore.get('selectedFloor');
 	$scope.building = $cookieStore.get('selectedBuildingName');
+	$scope.reservedDesk = false;
 
 	if ($scope.building == 'Midtown I' && $scope.floor == '16th Floor') {
 		$scope.sections = sectionListATLSixteen;
@@ -14,16 +15,35 @@ flexDeskApp.controller('sectionController', ['$scope', '$cookies', '$cookieStore
 		$location.url("layout");
 	};
 
-	$scope.floor16Sections = $scope.sections[0];
+	$scope.floor16Sections = $scope.sections[1];
 
-	$('#action-btn').click(function() {
-	  $(this).toggleClass('btn-danger');
-		$('#action-btn span').toggleClass('glyphicon-remove');
-	});
+	$scope.reserveDesk = function(selectedSeat) {
 
-	$('#favorite-btn').click(function() {
-	  $('#favorite-btn span').toggleClass('favorited');
-	});
+		if (!$scope.reservedDesk) {
+			$scope.reservedDesk = selectedSeat;
+		}
+
+		if (selectedSeat == $scope.reservedDesk) {
+
+			$('#' + selectedSeat).toggleClass('selected');
+
+			$('#seat-options').toggle('fast');
+
+			$('#action-btn').click(function() {
+				$(this).toggleClass('btn-danger');
+				$('#action-btn span').toggleClass('glyphicon-remove');
+				$('#' + selectedSeat).toggleClass('unavailable');
+			});
+
+			$('#favorite-btn').click(function() {
+				$('#favorite-btn span').toggleClass('favorited');
+			});
+		}
+
+		if (!$('#' + selectedSeat).hasClass('selected') && !$('#' + selectedSeat).hasClass('unavailable')) {
+			$scope.reservedDesk = false;
+		}
+	};
 }]);
 
 var sectionListATLSixteen = [

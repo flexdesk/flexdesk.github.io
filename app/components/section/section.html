@@ -5,7 +5,7 @@
 		<small>{{ floor }}</small>
 	</div>
 </div>
-<hr class="hr-small">
+	<hr class="hr-small">
 
 <div class="content-pad">
 	<form id="section-form">
@@ -16,7 +16,24 @@
 
 	<div id="section-map">
 		<h4>{{ floor16Sections.value }}</h4>
-		<img ng-src="{{ floor16Sections.img }}" />
+		<div id="map">
+			<!-- <img id="pod" ng-src="{{ floor16Sections.img }}"/> -->
+			<a id="s1" class="seat" ng-click="reserveDesk('s1')">16-132</a>
+			<a id="s2" class="seat" ng-click="reserveDesk('s2')">16-139</a>
+			<a id="s3" class="seat" ng-click="reserveDesk('s3')">16-133</a>
+			<a id="s4" class="seat" ng-click="reserveDesk('s4')">16-134</a>
+			<a id="s5" class="seat" ng-click="reserveDesk('s5')">16-135</a>
+			<a id="s6" class="seat" ng-click="reserveDesk('s6')">16-136</a>
+			<a id="s7" class="seat" ng-click="reserveDesk('s7')">16-137</a>
+			<a id="s8" class="seat" ng-click="reserveDesk('s8')">16-140</a>
+			<a id="s9" class="seat" ng-click="reserveDesk('s9')">16-138</a>
+			<a id="s10" class="seat" ng-click="reserveDesk('s10')">16-141</a>
+			<a id="s11" class="seat" ng-click="reserveDesk('s11')">16-142</a>
+			<a id="s12" class="seat" ng-click="reserveDesk('s12')">16-143</a>
+			<a id="s13" class="seat" ng-click="reserveDesk('s13')">16-144</a>
+			<a id="s14" class="seat" ng-click="reserveDesk('s14')">16-145</a>
+		</div>
+
 	</div>
 </div>
 
