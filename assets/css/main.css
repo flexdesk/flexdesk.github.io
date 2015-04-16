@@ -1,6 +1,11 @@
 /****************************
 GENERAL
 ****************************/
+html, body{
+  overflow-x: hidden;
+  height: 100%;
+}
+
 a {
   color: #0574ac;
   text-decoration: none;
@@ -22,7 +27,7 @@ header.globalNav {
   margin: 0;
 }
 
-.toggle-panel {
+.menu-btn {
   display: inline-block;
   font-size: 25px;
   line-height: 50px;
@@ -52,15 +57,21 @@ header.globalNav {
 /****************************
 SIDEBAR
 ****************************/
+
+.pushy a {
+  display: inline;
+  padding: 0;
+  border: none;
+}
+
+.pushy a:hover {
+  background: none;
+}
+
 #sidebar {
   background: #333;
-  bottom: 0;
   color: #fff;
-  left: 0;
-  list-style: none;
-  position: fixed;
-  right: 0;
-  top: 0;
+  font-size: 14px;
 }
 
 #side-head {
@@ -107,19 +118,16 @@ SIDEBAR
 /****************************
 MAIN CONTENT
 ****************************/
-#main {
-  /*height: 600px;*/
-  /*z-index: -9999;*/
-}
-
-.ng-view {
-  /*z-index: -9999;*/
+#container {
+  /*height: 150%;*/
+  /*height: 150%;*/
+  /*overflow-y: auto;*/
 }
 
 .overlay {
   background: rgba(0,0,0,.6);
   overflow: visible;
-  height: 100%;
+  /*height: 100%;*/
   width: 100%;
   /*z-index: 9999;*/
 }
@@ -129,10 +137,26 @@ MAIN CONTENT
   padding: 15px;
 }
 
-.list-head h2 {
+.back {
+  display: table-cell;
+  vertical-align: middle;
+  padding-right: 15px;
+  text-align: center;
+}
+
+.back:hover,
+.back:focus {
+  cursor: pointer;
+}
+
+.head {
+  display: table-cell;
+}
+
+.head h2 {
   margin: 0;
 }
-.list-head small {
+.head small {
   color: #666;
   font-size: 12px;
 }
@@ -164,4 +188,43 @@ FLOOR, SECTION
 .small-name {
   display: block;
   font-size: 20px;
+}
+
+#sections {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  background: url('../img/down-arrow.png') no-repeat 97% 15px;
+}
+
+#section-map {
+  margin-top: 15px;
+}
+
+#section-map img {
+  display: block;
+  margin: 0 auto;
+}
+
+#section-map img:focus,
+#section-map img:hover {
+  cursor: pointer;
+}
+
+#seat-options {
+  display: block;
+}
+
+#seat-options a {
+  display: inline-block;
+  margin: 0;
+  width: 50%;
+  border-radius: 0;
+  height: 50px;
+  line-height: 40px;
+  font-size: 24px;
+}
+
+.favorited {
+  color: #cf2a2a;
 }

@@ -10,7 +10,7 @@ flexDeskApp.controller('floorController', ['$scope', '$cookies', '$cookieStore',
 	}
 
 	$scope.goSection = function(floor) {
-		$cookieStore.put('floorSelected', floor);
+		$cookieStore.put('selectedFloor', floor);
 		$location.url('section');
 	};
 }]);
