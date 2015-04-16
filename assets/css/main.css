@@ -225,7 +225,7 @@ FLOOR, SECTION
   width: 340px;
   height: 355px;
   position: relative;
-  background-image: url('/assets/img/section.png') ;
+  background-image: url('../img/section.png') ;
   margin: 0 auto;
 }
 
