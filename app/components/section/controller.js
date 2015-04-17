@@ -15,7 +15,7 @@ flexDeskApp.controller('sectionController', ['$scope', '$cookies', '$cookieStore
 		$location.url("layout");
 	};
 
-	$scope.floor16Sections = $scope.sections[1];
+	$scope.floor16Sections = $scope.sections[0];
 
 	$scope.reserveDesk = function(selectedSeat) {
 
@@ -32,7 +32,7 @@ flexDeskApp.controller('sectionController', ['$scope', '$cookies', '$cookieStore
 			$('#action-btn').click(function() {
 				$(this).toggleClass('btn-danger');
 				$('#action-btn span').toggleClass('glyphicon-remove');
-				$('#' + selectedSeat).toggleClass('unavailable');
+				$('#' + selectedSeat).toggleClass('mine');
 			});
 
 			$('#favorite-btn').click(function() {
@@ -40,18 +40,13 @@ flexDeskApp.controller('sectionController', ['$scope', '$cookies', '$cookieStore
 			});
 		}
 
-		if (!$('#' + selectedSeat).hasClass('selected') && !$('#' + selectedSeat).hasClass('unavailable')) {
+		if (!$('#' + selectedSeat).hasClass('selected') && !$('#' + selectedSeat).hasClass('mine')) {
 			$scope.reservedDesk = false;
 		}
 	};
 }]);
 
 var sectionListATLSixteen = [
-	{
-		name: 'Overview',
-		value: 'Overview',
-		img: './assets/img/floor16map.jpg'
-	},
 	{
 		name: 'A-B',
 		value: 'Section A-B',
